@@ -26,8 +26,8 @@ public class Organiser {
 			signumber = l[0].length();
 			
 			for (int i = 1; i< l.length ; i++){
-				if (l[i].matches("/*")){
-					String comment = l[i].split("/*")[1];
+				if (l[i].matches("[/*]")){
+					String comment = l[i].split("[/*]")[1];
 					check(linenumber,signumber,comment);
 					signumber += l[i].length();
 				}
